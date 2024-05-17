@@ -1,4 +1,8 @@
 # streaming-03-bonus-dgraves
+
+**Author**: Derek Graves
+**Date**: May 16, 2024
+
 This is a custom streaming project that uses RabbitMQ and a producer and consumer to read from a CSV file and write messages to a new queue every 1-3 seconds. 
 
 This project requires some free code - beyond that available in the Python Standard Library.  The CSV file source used can be found in the references below. To avoid messing up our local default Python installation, and any other Python projects we may have, we create a local virtual environment to install and use these libraries.
@@ -10,6 +14,14 @@ This project requires some free code - beyond that available in the Python Stand
 3. VS Code Editor
 4. VS Code Extension: Python (by Microsoft)
 5. RabbitMQ Server installed and running locally
+
+## Avian Influenza Dataset
+
+"This dataset provides comprehensive insights into the distribution and potential spread of avian influenza, commonly known as "Bird Flu," in Ireland. Avian influenza is a highly contagious and often fatal viral disease primarily affecting birds, with wild migratory water birds being the main reservoir of the virus.
+
+The dataset includes information about bird species captured in Ireland from 1980 to 2020, focusing on species targeted for the H5N1 strain of avian flu. Understanding the geographic distribution of these bird species is crucial for assessing the risk of avian influenza introduction into Ireland, especially during migratory seasons when wild birds arrive and congregate on wetlands, potentially mixing with resident species."
+
+Link to dataset on Kaggle: (https://www.kaggle.com/datasets/jasmeet0516/bird-flu-dataset-avian-influenza)
 
 ## Task 1. Create a Python Virtual Environment
 
