@@ -21,7 +21,7 @@ This project requires some free code - beyond that available in the Python Stand
 
 The dataset includes information about bird species captured in Ireland from 1980 to 2020, focusing on species targeted for the H5N1 strain of avian flu. Understanding the geographic distribution of these bird species is crucial for assessing the risk of avian influenza introduction into Ireland, especially during migratory seasons when wild birds arrive and congregate on wetlands, potentially mixing with resident species."
 
-Link to dataset on Kaggle: (https://www.kaggle.com/datasets/jasmeet0516/bird-flu-dataset-avian-influenza)
+Link to dataset and description on Kaggle: (https://www.kaggle.com/datasets/jasmeet0516/bird-flu-dataset-avian-influenza)
 
 ## Task 1. Create a Python Virtual Environment
 
