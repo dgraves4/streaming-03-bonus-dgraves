@@ -91,14 +91,83 @@ pip list
 ```
 ## Task 5. Execute the Producer/Sender
 
+There are some additional imports added to the file from the Standard Library:
+
+```bash
+# Import from Standard Library
+import sys
+import csv
+import time
+import random
+```
+
+There are also some specific elements added that make this file unique:
+
+1. Script: dgraves_emit_data.py
+2. Description: This script reads messages from a CSV file and sends them to a named queue every 1-3 seconds.
+3. Changes: The script was modified to:
+- Open and read a CSV file.
+- Send each row of the CSV file as a message to the RabbitMQ queue.
+- Pause for a random interval between 1 and 3 seconds between messages.
+
+Now we are ready to execute: 
+
 1. Read dgraves_emit_data.py
 2. Run the file. 
 
-It will run, emit a message to the named RabbitMQ queue, and finish.
+It will run, emit a message to the named RabbitMQ queue, and finish. A logging file is also generated.
 We can execute additional commands in the terminal as soon as it finishes. 
-![verifying setup](./images/verifying.png)
+
+There are also some additional functions that have been added for opening and reading CSV files and sending them at 1-3 second intervals: 
+
+```bash
+# ---------------------------------------------------------------------------
+# If this is the script we are running, then call some functions and execute code!
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    host = "localhost"
+    queue_name = "avian-influenza-dwg"
+    csv_file_path = "C:\\Users\\derek\\OneDrive\\Documents\\Streaming Data\\Week 3\\streaming-03-bonus-dgraves\\avian-influenza.csv"
+
+    try:
+        # Open the CSV file and read data
+        with open(csv_file_path, mode='r', newline='', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            for row in reader:
+                message = ','.join(row)
+                send_message(host, queue_name, message)
+                time.sleep(random.uniform(1, 3)) #Randomly generate a row message every 1-3 seconds
+
+    except FileNotFoundError:
+        logger.error(f"CSV file not found: {csv_file_path}") #Additional logging if CSV file path is not found
+```
 
 ## Task 6. Execute the Consumer/Listener
+1. Script: dgraves_listen_for_data.py
+2. Description: This script continuously listens for messages on a named queue and writes them to a new file as they are received.
+3. Changes: The script was modified to:
+- Listen for messages on the same queue used by the producer.
+- Write each received message to a new file named received_data.txt.
+
+Now we are ready to: 
 
 1. Read dgraves_listen_for_data.py 
 2. Run the file.
+
+## Task 7. Verify Messages Sent/Recieved in Terminals
+
+If an error occurs during the execution of either file, review the terminal and generated log file for specifics.  Ensure that in your alternate terminal that you're in the correct directory and have the virtual environment activated. Otherwise, one termnal should be emitting data rows every 1-3 seconds, with the listener file receiving these rows in real time: 
+
+![Multi-Terminal Setup](images/MultiTerminalCSV.png)
+
+## Sources
+All files were build and modified from the original source files and code included in this course repository:
+-[streaming-03-rabbitmq](https://github.com/denisecase/streaming-03-rabbitmq)
+
+- CSV file used for this project: [Avian Influenza Dataset](https://www.kaggle.com/datasets/jasmeet0516/bird-flu-dataset-avian-influenza)
+- [RabbitMQ Official Website](https://www.rabbitmq.com/)
+- [pika Documentation](https://pika.readthedocs.io/)
+- [Python 3.7+ Documentation](https://docs.python.org/3/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Python Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
