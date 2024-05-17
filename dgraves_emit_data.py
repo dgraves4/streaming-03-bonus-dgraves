@@ -65,8 +65,8 @@ def send_message(host: str, queue_name: str, message: str):
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
     host = "localhost"
-    queue_name = "hello"
-    csv_file_path = "C:\\Users\\derek\\OneDrive\\Documents\\Streaming Data\\Week 3\\streaming-03-bonus-dgraves\\avian-influenza - Copy.csv"
+    queue_name = "avian-influenza-dwg"
+    csv_file_path = "C:\\Users\\derek\\OneDrive\\Documents\\Streaming Data\\Week 3\\streaming-03-bonus-dgraves\\avian-influenza-dwg.csv"
 
     try:
         # Open the CSV file and read data

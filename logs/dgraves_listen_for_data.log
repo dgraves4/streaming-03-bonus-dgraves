@@ -1,0 +1,22 @@
+2024-05-16 17:23:38,166.dgraves_listen_for_data.INFO ==================================================
+2024-05-16 17:23:38,167.dgraves_listen_for_data.INFO Today is 2024-05-16 at 05:23 PM
+2024-05-16 17:23:38,167.dgraves_listen_for_data.INFO Running on: nt Windows 11
+2024-05-16 17:23:38,167.dgraves_listen_for_data.INFO Python version:  3.12.2
+2024-05-16 17:23:38,167.dgraves_listen_for_data.INFO Python path: C:\Users\derek\AppData\Local\Programs\Python\Python312
+2024-05-16 17:23:38,167.dgraves_listen_for_data.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 3\streaming-03-bonus-dgraves
+2024-05-16 17:23:38,168.dgraves_listen_for_data.INFO ==================================================
+2024-05-16 17:23:38,186.dgraves_listen_for_data.INFO  [*] Waiting for messages. To exit press CTRL+C
+2024-05-16 17:25:09,679.dgraves_listen_for_data.INFO Received: ﻿_id,Scientific_Name,Common_Name,Date,Year,Month,Day,Time,Country,Country_State_County,State,County,Locality,Latitude,Longitude,Parent_Species,target_H5_HPAI
+2024-05-16 17:25:11,879.dgraves_listen_for_data.INFO Received: 1,Acrocephalus scirpaceus,Eurasian Reed Warbler,2015-09-15T00:00:00,2015,9,15,1100,Ireland,IE-C-GY,Connaught,Galway,Inishmore (Inis M�r),53.1291,-9.7507,Acrocephalus scirpaceus,0
+2024-05-16 17:25:13,542.dgraves_listen_for_data.INFO Received: 2,Acrocephalus scirpaceus,Eurasian Reed Warbler,2015-09-15T00:00:00,2015,9,15,1100,Ireland,IE-C-GY,Connaught,Galway,Inishmore (Inis M�r),53.1291,-9.7507,Acrocephalus scirpaceus,0
+2024-05-16 17:25:15,603.dgraves_listen_for_data.INFO Received: 3,Limosa haemastica,Hudsonian Godwit,2015-09-15T00:00:00,2015,9,15,1100,Ireland,IE-C-GY,Connaught,Galway,Inishmore (Inis M�r),53.1291,-9.7507,Limosa haemastica,0
+2024-05-16 17:25:17,150.dgraves_listen_for_data.INFO Received: 4,Limosa haemastica,Hudsonian Godwit,2015-09-15T00:00:00,2015,9,15,1100,Ireland,IE-C-GY,Connaught,Galway,Inishmore (Inis M�r),53.1291,-9.7507,Limosa haemastica,0
+2024-05-16 17:25:18,171.dgraves_listen_for_data.INFO Received: 5,Limosa haemastica,Hudsonian Godwit,2015-09-15T00:00:00,2015,9,15,1100,Ireland,IE-C-GY,Connaught,Galway,Inishmore (Inis M�r),53.1291,-9.7507,Limosa haemastica,0
+2024-05-16 17:25:19,195.dgraves_listen_for_data.INFO Received: 6,Muscicapa striata,Spotted Flycatcher,2015-09-15T00:00:00,2015,9,15,1100,Ireland,IE-C-GY,Connaught,Galway,Inishmore (Inis M�r),53.1291,-9.7507,Muscicapa striata,0
+2024-05-16 17:25:21,728.dgraves_listen_for_data.INFO Received: 7,Larus canus,Mew Gull,2014-08-16T00:00:00,2014,8,16,930,Ireland,IE-M-KY,Munster,Kerry,Ring of Kerry.,52.0018,-10.1239,Larus canus,1
+2024-05-16 17:25:24,209.dgraves_listen_for_data.INFO Received: 8,Corvus frugilegus,Rook,2014-08-16T00:00:00,2014,8,16,930,Ireland,IE-M-KY,Munster,Kerry,Ring of Kerry.,52.0018,-10.1239,Corvus frugilegus,0
+2024-05-16 17:25:25,647.dgraves_listen_for_data.INFO Received: 9,Larus argentatus,Herring Gull,2014-08-17T00:00:00,2014,8,17,900,Ireland,IE-M-KY,Munster,Kerry,Dingle peninsula.,52.1773,-10.4411,Larus argentatus,0
+2024-05-16 17:25:27,677.dgraves_listen_for_data.INFO Received: 10,Corvus frugilegus,Rook,2005-06-22T00:00:00,2005,6,22,1300,Ireland,IE-M-CE,Munster,Clare,Cliffs of Moher--Doolin,53.0089,-9.3916,Corvus frugilegus,0
+2024-05-16 17:25:30,277.dgraves_listen_for_data.INFO Received: 11,Corvus monedula,Eurasian Jackdaw,2005-06-22T00:00:00,2005,6,22,1300,Ireland,IE-M-CE,Munster,Clare,Cliffs of Moher--Doolin,53.0089,-9.3916,Corvus monedula,0
+2024-05-16 17:25:33,000.dgraves_listen_for_data.WARNING User interrupted the listening process.
+2024-05-16 17:25:33,000.dgraves_listen_for_data.INFO Closing connection. Goodbye.
