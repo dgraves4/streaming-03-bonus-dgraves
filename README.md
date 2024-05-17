@@ -162,7 +162,7 @@ If an error occurs during the execution of either file, review the terminal and 
 
 ## Sources
 All files were build and modified from the original source files and code included in this course repository:
--[streaming-03-rabbitmq](https://github.com/denisecase/streaming-03-rabbitmq)
+- [streaming-03-rabbitmq](https://github.com/denisecase/streaming-03-rabbitmq)
 
 - CSV file used for this project: [Avian Influenza Dataset](https://www.kaggle.com/datasets/jasmeet0516/bird-flu-dataset-avian-influenza)
 - [RabbitMQ Official Website](https://www.rabbitmq.com/)
